@@ -1,0 +1,12 @@
+- name: Auth headers in requests
+  match: "item[].item[].request.header[?contains(key, 'Auth')] | []"
+- name: Auth credentials
+  match: "item[].request.auth | []"
+- name: Auth headers in response original header
+  match: "item[].item[].response[].originalRequest.header[?contains(key, 'Auth')]"
+- name: Session cookies
+  match: "item[].item[].response[].header[?key=='Set-Cookie' || contains(value, 'sessionid')]"
+- name: Variables
+  match: "variable"
+# - name: Sample no match
+#   match: "item[].item[].request.header[?contains(key, 'Joke')] | []"
