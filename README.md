@@ -15,6 +15,15 @@ Nopeman checks the collection before you share it with confidence.
 nopeman <inputfile>
 ```
 
+## Download
+
+1. Choose the latest passing build from the [actions tab](https://github.com/aldnav/nopeman/actions)
+2. Select the artifact that matches your OS and architecture
+3. Download the artifact
+4. Extract and allow execution
+    1. Mac: Do not move to trash and cancel. Then allow from the System Preferences > Privacy and Security. Run again.
+5. Create or copy the `redact.yml` file to the same directory as the executable
+
 ## Sample output
 
 ![Sample output](sample_run.png)
